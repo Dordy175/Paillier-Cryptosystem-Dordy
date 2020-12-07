@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     59125,       1209]
-NotebookOptionsPosition[     58416,       1188]
-NotebookOutlinePosition[     58817,       1204]
-CellTagsIndexPosition[     58774,       1201]
+NotebookDataLength[     64637,       1345]
+NotebookOptionsPosition[     63928,       1324]
+NotebookOutlinePosition[     64329,       1340]
+CellTagsIndexPosition[     64286,       1337]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -46,7 +46,8 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"paillierGUI", "[", "]"}]], "Input",
  CellChangeTimes->{{3.816328112237093*^9, 3.81632811755702*^9}},
- CellLabel->"In[92]:=",ExpressionUUID->"63805208-3098-439e-861e-914a5552bde8"],
+ CellLabel->
+  "In[279]:=",ExpressionUUID->"63805208-3098-439e-861e-914a5552bde8"],
 
 Cell[BoxData[
  FrameBox[
@@ -64,20 +65,21 @@ Cell[BoxData[
                     TagBox[
                     GridBox[{{"\"Message\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`message$55055]]}, {"\"CipherText\"", 
+                    Dynamic[$CellContext`message$4682716]]}, {
+                    "\"CipherText\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`cipherText$55055], Enabled -> 
+                    Dynamic[$CellContext`cipherTextEnc$4682716], Enabled -> 
                     False]}, {
                     ButtonBox[
                     "\"Clear\"", 
-                    ButtonFunction :> $CellContext`clearEncFields$55055[], 
+                    ButtonFunction :> $CellContext`clearEncFields$4682716[], 
                     ImageSize -> All, Background -> RGBColor[
                     Rational[2, 3], 0.8333333333333333, 0.16666666666666666`],
                      Appearance -> Automatic, Evaluator -> Automatic, Method -> 
                     "Preemptive"], 
                     ButtonBox[
                     "\"Encrypt\"", 
-                    ButtonFunction :> $CellContext`encryptText$55055[], 
+                    ButtonFunction :> $CellContext`encryptText$4682716[], 
                     ImageSize -> All, Background -> RGBColor[
                     Rational[2, 3], 0.8333333333333333, 0.16666666666666666`],
                      Appearance -> Automatic, Evaluator -> Automatic, Method -> 
@@ -126,19 +128,20 @@ Cell[BoxData[
                     TagBox[
                     GridBox[{{"\"CipherText\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`encrypted$55055]]}, {"\"Decrypted\"", 
+                    Dynamic[$CellContext`encrypted$4682716]]}, {
+                    "\"Decrypted\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`decrypted$55055]]}, {
+                    Dynamic[$CellContext`decrypted$4682716]]}, {
                     ButtonBox[
                     "\"Clear\"", 
-                    ButtonFunction :> $CellContext`clearDecFields$55055[], 
+                    ButtonFunction :> $CellContext`clearDecFields$4682716[], 
                     ImageSize -> All, Background -> RGBColor[
                     Rational[2, 3], 0.8333333333333333, 0.16666666666666666`],
                      Appearance -> Automatic, Evaluator -> Automatic, Method -> 
                     "Preemptive"], 
                     ButtonBox[
                     "\"Decrypt\"", 
-                    ButtonFunction :> $CellContext`decryptText$55055[], 
+                    ButtonFunction :> $CellContext`decryptText$4682716[], 
                     ImageSize -> All, Background -> RGBColor[
                     Rational[2, 3], 0.8333333333333333, 0.16666666666666666`],
                      Appearance -> Automatic, Evaluator -> Automatic, Method -> 
@@ -181,8 +184,8 @@ Cell[BoxData[
                     RowBox[{"{", "}"}]}], ",", 
                     RowBox[{"RotateLabel", "\[Rule]", "False"}], ",", 
                     RowBox[{"Spacings", "\[Rule]", "Automatic"}]}], 
-                    "]"}]& )]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 DefaultBaseStyle -> "Column", 
+                    "]"}]& )]}}, DefaultBaseStyle -> "Column", 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
                 "Column"], ",", 
@@ -191,75 +194,79 @@ Cell[BoxData[
                    TemplateBox[{
                     PanelBox[
                     InterpretationBox[
-                    GridBox[{{"\"PrimeSize\"", 
+                    GridBox[{{"\"Maximum PrimeSize\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`primeLenght$55055]]}, {
+                    Dynamic[$CellContext`primeLenght$4682716]]}, {
                     "\"Public key (for encrypting) = {n, g}\"", 
                     "\"Private key (for decrypting) = {p, q}\""}, {
                     "\"\"", "\"\""}, {"\"Message\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`message$55055]]}, {"\"Message 1\"", 
+                    Dynamic[$CellContext`message$4682716]]}, {"\"Message 1\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`infoMessage1$55055]]}, {
+                    Dynamic[$CellContext`infoMessage1$4682716]]}, {
                     "\"Message 2\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`infoMessage2$55055]]}, {
+                    Dynamic[$CellContext`infoMessage2$4682716]]}, {
                     "\"CipherText\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`cipherText$55055]]}, {"\"Prime P\"", 
+                    Dynamic[$CellContext`cipherText$4682716]]}, {
+                    "\"Prime P\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`p$55055]]}, {"\"Prime Q\"", 
+                    Dynamic[$CellContext`p$4682716]]}, {"\"Prime Q\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`q$55055]]}, {"\"N\"", 
+                    Dynamic[$CellContext`q$4682716]]}, {"\"N\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`n$55055]]}, {"\"N^2 (Z*n2)\"", 
+                    Dynamic[$CellContext`n$4682716]]}, {"\"N^2 (Z*n2)\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`n2$55055]]}, {"\"G\"", 
+                    Dynamic[$CellContext`n2$4682716]]}, {"\"G\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`g$55055]]}, {
+                    Dynamic[$CellContext`g$4682716]]}, {
                     "\"\[Lambda] (Lambda)\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`lambda$55055]]}, {"\"\[Mu] (MMI)\"", 
+                    Dynamic[$CellContext`lambda$4682716]]}, {
+                    "\"\[Mu] (MMI)\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`mmi$55055]]}, {"\"\"", 
+                    Dynamic[$CellContext`mmi$4682716]]}, {"\"\"", 
                     ButtonBox[
                     "\"Clear\"", 
-                    ButtonFunction :> $CellContext`clearInfoFields$55055[], 
+                    ButtonFunction :> $CellContext`clearInfoFields$4682716[], 
                     ImageSize -> All, Background -> RGBColor[
                     Rational[2, 3], 0.8333333333333333, 0.16666666666666666`],
                      Appearance -> Automatic, Evaluator -> Automatic, Method -> 
                     "Preemptive"]}}, RowAlignments -> Left, ColumnAlignments -> 
                     Right, RowSpacings -> 1, ColumnSpacings -> 3], 
-                    TableForm[{{"PrimeSize", 
+                    TableForm[{{"Maximum PrimeSize", 
                     InputField[
-                    Dynamic[$CellContext`primeLenght$55055]]}, {
+                    Dynamic[$CellContext`primeLenght$4682716]]}, {
                     "Public key (for encrypting) = {n, g}", 
                     "Private key (for decrypting) = {p, q}"}, {"", ""}, {
                     "Message", 
                     InputField[
-                    Dynamic[$CellContext`message$55055]]}, {"Message 1", 
+                    Dynamic[$CellContext`message$4682716]]}, {"Message 1", 
                     InputField[
-                    Dynamic[$CellContext`infoMessage1$55055]]}, {"Message 2", 
+                    Dynamic[$CellContext`infoMessage1$4682716]]}, {
+                    "Message 2", 
                     InputField[
-                    Dynamic[$CellContext`infoMessage2$55055]]}, {"CipherText", 
+                    Dynamic[$CellContext`infoMessage2$4682716]]}, {
+                    "CipherText", 
                     InputField[
-                    Dynamic[$CellContext`cipherText$55055]]}, {"Prime P", 
+                    Dynamic[$CellContext`cipherText$4682716]]}, {"Prime P", 
                     InputField[
-                    Dynamic[$CellContext`p$55055]]}, {"Prime Q", 
+                    Dynamic[$CellContext`p$4682716]]}, {"Prime Q", 
                     InputField[
-                    Dynamic[$CellContext`q$55055]]}, {"N", 
+                    Dynamic[$CellContext`q$4682716]]}, {"N", 
                     InputField[
-                    Dynamic[$CellContext`n$55055]]}, {"N^2 (Z*n2)", 
+                    Dynamic[$CellContext`n$4682716]]}, {"N^2 (Z*n2)", 
                     InputField[
-                    Dynamic[$CellContext`n2$55055]]}, {"G", 
+                    Dynamic[$CellContext`n2$4682716]]}, {"G", 
                     InputField[
-                    Dynamic[$CellContext`g$55055]]}, {"\[Lambda] (Lambda)", 
+                    Dynamic[$CellContext`g$4682716]]}, {"\[Lambda] (Lambda)", 
                     InputField[
-                    Dynamic[$CellContext`lambda$55055]]}, {"\[Mu] (MMI)", 
+                    Dynamic[$CellContext`lambda$4682716]]}, {"\[Mu] (MMI)", 
                     InputField[
-                    Dynamic[$CellContext`mmi$55055]]}, {{}, 
+                    Dynamic[$CellContext`mmi$4682716]]}, {{}, 
                     Button["Clear", 
-                    $CellContext`clearInfoFields$55055[], ImageSize -> All, 
+                    $CellContext`clearInfoFields$4682716[], ImageSize -> All, 
                     Background -> RGBColor[
                     Rational[2, 3], 0.8333333333333333, 
                     0.16666666666666666`]]}}, 
@@ -299,8 +306,8 @@ Cell[BoxData[
                     RowBox[{"{", "}"}]}], ",", 
                     RowBox[{"RotateLabel", "\[Rule]", "False"}], ",", 
                     RowBox[{"Spacings", "\[Rule]", "Automatic"}]}], 
-                    "]"}]& )]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 DefaultBaseStyle -> "Column", 
+                    "]"}]& )]}}, DefaultBaseStyle -> "Column", 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
                 "Column"], ",", 
@@ -311,26 +318,34 @@ Cell[BoxData[
                     TagBox[
                     GridBox[{{"\"Message 1\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`m1$55055]]}, {"\"Message 2\"", 
+                    Dynamic[$CellContext`m1$4682716]]}, {"\"Message 2\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`m2$55055]]}, {"\"Sum of messages\"", 
+                    Dynamic[$CellContext`m2$4682716]]}, {
+                    "\"Sum of messages\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`m12$55055], Enabled -> False]}, {
+                    Dynamic[$CellContext`m12$4682716], Enabled -> False]}, {
                     ButtonBox[
-                    "\"Clear\"", 
-                    ButtonFunction :> $CellContext`clearAddFields$55055[], 
-                    ImageSize -> All, Background -> RGBColor[
+                    "\"Clear\"", Appearance -> Automatic, Background -> 
+                    RGBColor[
                     Rational[2, 3], 0.8333333333333333, 0.16666666666666666`],
-                     Appearance -> Automatic, Evaluator -> Automatic, Method -> 
+                     ButtonFunction :> $CellContext`clearAddFields$4682716[], 
+                    Evaluator -> Automatic, ImageSize -> All, Method -> 
                     "Preemptive"], 
                     ButtonBox[
-                    "\"Add\"", 
-                    ButtonFunction :> $CellContext`additionText$55055[], 
-                    ImageSize -> All, Background -> RGBColor[
+                    "\"Add\"", Appearance -> Automatic, Background -> RGBColor[
                     Rational[2, 3], 0.8333333333333333, 0.16666666666666666`],
-                     Appearance -> Automatic, Evaluator -> Automatic, Method -> 
-                    "Preemptive"]}}, RowSpacings -> 1, ColumnSpacings -> 3, 
-                    RowAlignments -> Baseline, ColumnAlignments -> Right], 
+                     ButtonFunction :> $CellContext`additionText$4682716[], 
+                    Evaluator -> Automatic, ImageSize -> All, Method -> 
+                    "Preemptive"]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Right}}, "Rows" -> {{Baseline}}}, 
+                    GridBoxSpacings -> {"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[2.0999999999999996`]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.4]}, 
+                    Offset[0.2]}}], 
                     Function[BoxForm`e$, 
                     TableForm[BoxForm`e$, TableAlignments -> {Right, Left}]]],
                      Background -> RGBColor[0.5, 0.5, 0.5]], 
@@ -374,27 +389,35 @@ Cell[BoxData[
                     TagBox[
                     GridBox[{{"\"Message 1\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`m3$55055]]}, {"\"Message 2\"", 
+                    Dynamic[$CellContext`m3$4682716]]}, {"\"Message 2\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`m4$55055]]}, {
+                    Dynamic[$CellContext`m4$4682716]]}, {
                     "\"Product of messages\"", 
                     InputFieldBox[
-                    Dynamic[$CellContext`m34$55055], Enabled -> False]}, {
+                    Dynamic[$CellContext`m34$4682716], Enabled -> False]}, {
                     ButtonBox[
-                    "\"Clear\"", 
-                    ButtonFunction :> $CellContext`clearMultiFields$55055[], 
-                    ImageSize -> All, Background -> RGBColor[
+                    "\"Clear\"", Appearance -> Automatic, Background -> 
+                    RGBColor[
                     Rational[2, 3], 0.8333333333333333, 0.16666666666666666`],
-                     Appearance -> Automatic, Evaluator -> Automatic, Method -> 
-                    "Preemptive"], 
+                     ButtonFunction :> \
+$CellContext`clearMultiFields$4682716[], Evaluator -> Automatic, ImageSize -> 
+                    All, Method -> "Preemptive"], 
                     ButtonBox[
-                    "\"Multiplicate\"", 
-                    ButtonFunction :> $CellContext`multiplicateText$55055[], 
-                    ImageSize -> All, Background -> RGBColor[
+                    "\"Multiplicate\"", Appearance -> Automatic, Background -> 
+                    RGBColor[
                     Rational[2, 3], 0.8333333333333333, 0.16666666666666666`],
-                     Appearance -> Automatic, Evaluator -> Automatic, Method -> 
-                    "Preemptive"]}}, RowSpacings -> 1, ColumnSpacings -> 3, 
-                    RowAlignments -> Baseline, ColumnAlignments -> Right], 
+                     ButtonFunction :> \
+$CellContext`multiplicateText$4682716[], Evaluator -> Automatic, ImageSize -> 
+                    All, Method -> "Preemptive"]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Right}}, "Rows" -> {{Baseline}}}, 
+                    GridBoxSpacings -> {"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[2.0999999999999996`]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.4]}, 
+                    Offset[0.2]}}], 
                     Function[BoxForm`e$, 
                     TableForm[BoxForm`e$, TableAlignments -> {Right, Left}]]],
                      Background -> RGBColor[0.5, 0.5, 0.5]], 
@@ -432,8 +455,8 @@ Cell[BoxData[
                     RowBox[{"{", "}"}]}], ",", 
                     RowBox[{"RotateLabel", "\[Rule]", "False"}], ",", 
                     RowBox[{"Spacings", "\[Rule]", "Automatic"}]}], 
-                    "]"}]& )]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 DefaultBaseStyle -> "Column", 
+                    "]"}]& )]}}, DefaultBaseStyle -> "Column", 
+                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                  GridBoxItemSize -> {
                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
                 "Column"]}], "}"}], ",", 
@@ -477,8 +500,16 @@ Cell[BoxData[
      Rational[2, 3], 0.8333333333333333, 0.16666666666666666`]],
   StripOnInput->False]], "Output",
  CellChangeTimes->{
-  3.8163281193751907`*^9, {3.816328176753769*^9, 3.8163281834937444`*^9}},
- CellLabel->"Out[92]=",ExpressionUUID->"8fd0a05e-b623-4d46-8fe5-935afc9c4a1e"]
+  3.8163281193751907`*^9, {3.816328176753769*^9, 3.8163281834937444`*^9}, {
+   3.8163300120007043`*^9, 3.8163300195953984`*^9}, {3.816330107397831*^9, 
+   3.816330114596584*^9}, 3.81633171236833*^9, 3.816331812298718*^9, 
+   3.816331942754133*^9, 3.816331991270403*^9, {3.816332056133996*^9, 
+   3.8163320686689367`*^9}, 3.816332127935466*^9, {3.816332194978791*^9, 
+   3.81633219925037*^9}, 3.816332275789356*^9, 3.8163324323265743`*^9, {
+   3.816332988741926*^9, 3.816332993521141*^9}, 3.816333267272027*^9, {
+   3.816333312429315*^9, 3.8163333649751434`*^9}},
+ CellLabel->
+  "Out[279]=",ExpressionUUID->"e5f4a820-b073-4197-af8a-a2366e3b241d"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -493,11 +524,11 @@ Cell[BoxData[
        "myColor", ",", "\[IndentingNewLine]", "encPanel", ",", 
         "clearEncFields", ",", "message", ",", "encryptText", ",", 
         "cipherText", ",", " ", "encLabels", ",", " ", "encFields", ",", 
-        "encryptBtn", ",", "clearEncBtn", ",", "\[IndentingNewLine]", 
-        "decPanel", ",", "clearDecFields", ",", " ", "decrypted", ",", 
-        "encrypted", ",", "key", ",", " ", "decryptText", ",", "  ", 
-        "decLabels", ",", " ", "decFields", ",", " ", "decryptBtn", ",", 
-        "clearDecBtn", ",", "\[IndentingNewLine]", "infoPanel", ",", 
+        "encryptBtn", ",", "clearEncBtn", ",", "cipherTextEnc", ",", 
+        "\[IndentingNewLine]", "decPanel", ",", "clearDecFields", ",", " ", 
+        "decrypted", ",", "encrypted", ",", "key", ",", " ", "decryptText", 
+        ",", "  ", "decLabels", ",", " ", "decFields", ",", " ", "decryptBtn",
+         ",", "clearDecBtn", ",", "\[IndentingNewLine]", "infoPanel", ",", 
         "refreshInfo", ",", "infoLabels", ",", " ", "infoFields", ",", "p", 
         ",", "q", ",", "n", ",", "n2", ",", " ", "lambda", ",", " ", "g", ",",
          " ", "lx", ",", " ", "mmi", ",", "clearInfoBtn", ",", "infoBtn", ",",
@@ -588,12 +619,17 @@ Cell[BoxData[
              RowBox[{"2", ",", 
               RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", 
           "\[IndentingNewLine]", 
-          RowBox[{"cipherText", " ", "=", " ", 
+          RowBox[{"cipherTextEnc", " ", "=", " ", 
            RowBox[{"x", "[", 
             RowBox[{"[", 
              RowBox[{"1", ",", " ", "1"}], "]"}], "]"}]}], ";", 
           "\[IndentingNewLine]", 
           RowBox[{"encrypted", " ", "=", " ", 
+           RowBox[{"x", "[", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", " ", "1"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"cipherText", " ", "=", " ", 
            RowBox[{"x", "[", 
             RowBox[{"[", 
              RowBox[{"1", ",", " ", "1"}], "]"}], "]"}]}], ";"}], 
@@ -613,7 +649,7 @@ Cell[BoxData[
            RowBox[{"Dynamic", "@", "message"}], "]"}], ",", 
           RowBox[{"InputField", "[", 
            RowBox[{
-            RowBox[{"Dynamic", "@", "cipherText"}], ",", 
+            RowBox[{"Dynamic", "@", "cipherTextEnc"}], ",", 
             RowBox[{"Enabled", "\[Rule]", "False"}]}], "]"}]}], "}"}]}], ";", 
        "\[IndentingNewLine]", 
        RowBox[{"clearEncBtn", "=", 
@@ -762,14 +798,62 @@ Cell[BoxData[
           "\[IndentingNewLine]", 
           RowBox[{"m12", " ", "=", " ", 
            RowBox[{"additionX", "[", 
-            RowBox[{"[", "3", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", "3"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"cipherText", " ", "=", "  ", 
+           RowBox[{"additionX", "[", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", 
+              RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
           RowBox[{"infoMessage1", " ", "=", "  ", 
            RowBox[{"additionX", "[", 
-            RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", "1"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
           RowBox[{"infoMessage2", " ", "=", " ", 
            RowBox[{"additionX", "[", 
-            RowBox[{"[", "2", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
-         ")"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", "2"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", "\[IndentingNewLine]", 
+          RowBox[{"p", "=", " ", 
+           RowBox[{"additionX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "1"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"q", "=", " ", 
+           RowBox[{"additionX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "2"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"n", "=", " ", 
+           RowBox[{"additionX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "3"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"n2", "=", " ", 
+           RowBox[{"additionX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "4"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"lambda", " ", "=", 
+           RowBox[{"additionX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "5"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"g", "=", " ", 
+           RowBox[{"additionX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "6"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"mmi", " ", "=", 
+           RowBox[{"additionX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", 
+              RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";"}], 
+         "\[IndentingNewLine]", ")"}]}], ";", "\[IndentingNewLine]", 
+       "\[IndentingNewLine]", 
        RowBox[{"clearAddFields", "[", "]"}], ";", "\[IndentingNewLine]", 
        RowBox[{"addLabels", "=", 
         RowBox[{"{", 
@@ -850,16 +934,64 @@ Cell[BoxData[
            RowBox[{"PaillierMultiplication", "[", 
             RowBox[{"m3", ",", "m4", ",", "primeLenght"}], "]"}]}], ";", 
           "\[IndentingNewLine]", 
-          RowBox[{"m34", " ", "=", " ", 
+          RowBox[{"cipherText", " ", "=", "  ", 
            RowBox[{"multiX", "[", 
-            RowBox[{"[", "3", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", 
+              RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
           RowBox[{"infoMessage1", " ", "=", " ", 
            RowBox[{"multiX", "[", 
-            RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", "1"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
           RowBox[{"infoMessage2", " ", "=", " ", 
            RowBox[{"multiX", "[", 
-            RowBox[{"[", "2", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
-         ")"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", "2"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"m34", " ", "=", " ", 
+           RowBox[{"multiX", "[", 
+            RowBox[{"[", 
+             RowBox[{"1", ",", "3"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", "\[IndentingNewLine]", 
+          RowBox[{"p", "=", " ", 
+           RowBox[{"multiX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "1"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"q", "=", " ", 
+           RowBox[{"multiX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "2"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"n", "=", " ", 
+           RowBox[{"multiX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "3"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"n2", "=", " ", 
+           RowBox[{"multiX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "4"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"lambda", " ", "=", 
+           RowBox[{"multiX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "5"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"g", "=", " ", 
+           RowBox[{"multiX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "6"}], "]"}], "]"}]}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"mmi", " ", "=", 
+           RowBox[{"multiX", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", 
+              RowBox[{"-", "1"}]}], "]"}], "]"}]}], ";"}], 
+         "\[IndentingNewLine]", "\[IndentingNewLine]", ")"}]}], ";", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
        RowBox[{"clearMultiFields", "[", "]"}], ";", "\[IndentingNewLine]", 
        RowBox[{"multiLabels", "=", 
         RowBox[{"{", 
@@ -930,26 +1062,23 @@ Cell[BoxData[
        RowBox[{
         RowBox[{"clearInfoFields", "[", "]"}], ":=", 
         RowBox[{"(", 
-         RowBox[{
-          RowBox[{"p", "=", 
-           RowBox[{"q", "=", " ", 
-            RowBox[{"n", "=", 
-             RowBox[{"message", " ", "=", " ", 
-              RowBox[{"infoMessage1", "=", 
-               RowBox[{"infoMessage2", "=", 
-                RowBox[{"n2", "=", 
-                 RowBox[{"g", "=", 
-                  RowBox[{"lambda", " ", "=", 
-                   RowBox[{"lx", " ", "=", " ", 
-                    RowBox[{"mmi", "=", 
+         RowBox[{"p", "=", 
+          RowBox[{"q", "=", " ", 
+           RowBox[{"n", "=", 
+            RowBox[{"message", " ", "=", " ", 
+             RowBox[{"infoMessage1", "=", 
+              RowBox[{"infoMessage2", "=", 
+               RowBox[{"n2", "=", 
+                RowBox[{"g", "=", 
+                 RowBox[{"lambda", " ", "=", 
+                  RowBox[{"lx", " ", "=", " ", 
+                   RowBox[{"mmi", "=", 
                     RowBox[{"cipherText", "=", "0"}]}]}]}]}]}]}]}]}]}]}]}], 
-          ";", " ", 
-          RowBox[{"primeLenght", "=", "3"}]}], ")"}]}], ";", 
-       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         ")"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
        RowBox[{"infoLabels", "=", 
         RowBox[{"{", 
          RowBox[{
-         "\"\<PrimeSize\>\"", ",", 
+         "\"\<Maximum PrimeSize\>\"", ",", 
           "\"\<Public key (for encrypting) = {n, g}\>\"", ",", "\"\<\>\"", 
           ",", "\"\<Message\>\"", ",", "\"\<Message 1\>\"", ",", 
           "\"\<Message 2\>\"", ",", "\"\<CipherText\>\"", ",", 
@@ -1182,8 +1311,15 @@ Cell[BoxData[
    3.8163277645766993`*^9}, {3.8163277973849387`*^9, 3.816327859728426*^9}, {
    3.816327907690174*^9, 3.816328041439348*^9}, {3.81632817088845*^9, 
    3.8163281738565135`*^9}, {3.8163282041209345`*^9, 
-   3.8163282056249084`*^9}},ExpressionUUID->"acd275bf-a1b6-419c-a783-\
-b0ccc3d18244"]
+   3.8163282056249084`*^9}, {3.816331648217368*^9, 3.81633170440962*^9}, {
+   3.816331919577094*^9, 3.8163319402977333`*^9}, {3.816332052041938*^9, 
+   3.8163320531280365`*^9}, {3.8163321238972626`*^9, 
+   3.8163321258889036`*^9}, {3.816332428259447*^9, 3.8163324298561745`*^9}, {
+   3.8163328791374874`*^9, 3.816332918057417*^9}, {3.8163329670888205`*^9, 
+   3.8163329854592733`*^9}, {3.8163332351464148`*^9, 3.816333261584264*^9}, {
+   3.816333344049738*^9, 3.816333345319916*^9}},
+ CellLabel->
+  "In[278]:=",ExpressionUUID->"acd275bf-a1b6-419c-a783-b0ccc3d18244"]
 }, Open  ]]
 },
 WindowSize->{1428., 735.75},
@@ -1206,10 +1342,10 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 690, 19, 192, "Title",ExpressionUUID->"dae71002-5634-4b16-af1a-a766493b65c1"],
 Cell[CellGroupData[{
-Cell[1295, 45, 203, 3, 28, "Input",ExpressionUUID->"63805208-3098-439e-861e-914a5552bde8"],
-Cell[1501, 50, 21859, 430, 405, "Output",ExpressionUUID->"8fd0a05e-b623-4d46-8fe5-935afc9c4a1e"]
+Cell[1295, 45, 207, 4, 28, "Input",ExpressionUUID->"63805208-3098-439e-861e-914a5552bde8"],
+Cell[1505, 51, 23196, 460, 405, "Output",ExpressionUUID->"e5f4a820-b073-4197-af8a-a2366e3b241d"]
 }, Open  ]],
-Cell[23375, 483, 35025, 702, 2222, "Input",ExpressionUUID->"acd275bf-a1b6-419c-a783-b0ccc3d18244"]
+Cell[24716, 514, 39196, 807, 2616, "Input",ExpressionUUID->"acd275bf-a1b6-419c-a783-b0ccc3d18244"]
 }, Open  ]]
 }
 ]
