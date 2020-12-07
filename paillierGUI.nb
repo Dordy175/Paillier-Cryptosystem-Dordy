@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     59096,       1209]
-NotebookOptionsPosition[     58385,       1188]
-NotebookOutlinePosition[     58788,       1204]
-CellTagsIndexPosition[     58745,       1201]
+NotebookDataLength[     59125,       1209]
+NotebookOptionsPosition[     58416,       1188]
+NotebookOutlinePosition[     58817,       1204]
+CellTagsIndexPosition[     58774,       1201]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,17 +24,17 @@ Cell[TextData[{
  StyleBox["Paillier",
   IgnoreSpellCheck->True],
  " Cryptosystem\n",
- StyleBox["(*\nDescription: Notebook containing GUI for ", "Text"],
- StyleBox["Paillier",
+ StyleBox["(*\nDescription: Notebook containing GUI for ", "Input"],
+ StyleBox["Paillier", "Input",
   IgnoreSpellCheck->True],
  StyleBox[" Cryptosystem (note that resources file must be run also),\n\
-Author: ", "Text"],
- StyleBox["Ladislav",
+Author: ", "Input"],
+ StyleBox["Ladislav", "Input",
   IgnoreSpellCheck->True],
- StyleBox[" ", "Text"],
- StyleBox["Dorot\[IAcute]k",
+ StyleBox[" ", "Input"],
+ StyleBox["Dorot\[IAcute]k", "Input",
   IgnoreSpellCheck->True],
- StyleBox[",\nDate: 7/12/2020\n*)", "Text"]
+ StyleBox[",\nDate: 7/12/2020\n*)", "Input"]
 }], "Title",
  CellChangeTimes->{{3.816325996461248*^9, 3.8163260016124744`*^9}, {
   3.816328043332288*^9, 
@@ -1186,7 +1186,7 @@ Cell[BoxData[
 b0ccc3d18244"]
 }, Open  ]]
 },
-WindowSize->{1428.75, 740.25},
+WindowSize->{1428., 735.75},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
 StyleDefinitions->"Default.nb",
@@ -1204,12 +1204,12 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 659, 19, 207, "Title",ExpressionUUID->"dae71002-5634-4b16-af1a-a766493b65c1"],
+Cell[580, 22, 690, 19, 192, "Title",ExpressionUUID->"dae71002-5634-4b16-af1a-a766493b65c1"],
 Cell[CellGroupData[{
-Cell[1264, 45, 203, 3, 28, "Input",ExpressionUUID->"63805208-3098-439e-861e-914a5552bde8"],
-Cell[1470, 50, 21859, 430, 405, "Output",ExpressionUUID->"8fd0a05e-b623-4d46-8fe5-935afc9c4a1e"]
+Cell[1295, 45, 203, 3, 28, "Input",ExpressionUUID->"63805208-3098-439e-861e-914a5552bde8"],
+Cell[1501, 50, 21859, 430, 405, "Output",ExpressionUUID->"8fd0a05e-b623-4d46-8fe5-935afc9c4a1e"]
 }, Open  ]],
-Cell[23344, 483, 35025, 702, 2222, "Input",ExpressionUUID->"acd275bf-a1b6-419c-a783-b0ccc3d18244"]
+Cell[23375, 483, 35025, 702, 2222, "Input",ExpressionUUID->"acd275bf-a1b6-419c-a783-b0ccc3d18244"]
 }, Open  ]]
 }
 ]
