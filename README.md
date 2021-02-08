@@ -8,10 +8,12 @@ Based on Paillier Cryptosystem, this software is for demonstrating how homomorph
 ## Running Paillier-Cryptosystem-Dordy
 Please note: Paillier-Cryptosystem-Dordy is using Wolfram's associated memory between notebooks and to ensure proper functionality, it is necessary to run and evaluate both notebooks. 
 Recommended approach: 
-- Windows: run Paillier.bat, evaluate both notebooks
-- other OS: 
-1. run paillierResources.nb, then paillierGUI.nb 
-2. evaluate paillierResources, evaluate paillierGUI (Wolfram -> Evaluation -> Evaluate notebook)
+- Windows: 
+1. Run Paillier.bat
+2. Evaluate paillierResources, evaluate paillierGUI (Wolfram -> Evaluation -> Evaluate notebook || "F8" )
+- Other OS: 
+1. Run paillierResources.nb, then paillierGUI.nb 
+2. Evaluate paillierResources, evaluate paillierGUI (Wolfram -> Evaluation -> Evaluate notebook)
 
 ## Preview
 <p align="left">
