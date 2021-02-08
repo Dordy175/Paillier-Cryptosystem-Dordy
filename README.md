@@ -21,3 +21,9 @@ Software is divided to 5 sections - encryption, decryption, addition, multiplica
 <p align="left">
  <img src="https://user-images.githubusercontent.com/68067175/107207519-ae322c00-6a00-11eb-870a-be10fa5dad88.png">
 </p>
+
+## Encryption && Decryption
+For encryption just write some number to input and click encrypt, for decryption just click decrpyt to decrypt previusoly encrypted number.
+<p align="left">
+ <img src="https://user-images.githubusercontent.com/68067175/107209713-78427700-6a03-11eb-93ca-e39847ee3352.png">
+</p>
