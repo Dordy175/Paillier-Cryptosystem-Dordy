@@ -29,7 +29,7 @@ For encryption just write some number to input and click encrypt, for decryption
 </p>
 
 ## Addition && Multiplication
-For addition and multiplication just choose specific operation and fill inputs - in info section should be full variables records
+For addition and multiplication just choose specific operation, fill inputs and click button - in info section should be full variables records
 <p align="center">
  <img src="https://user-images.githubusercontent.com/68067175/107209846-a6c05200-6a03-11eb-90dd-6e66011929d4.png">
 </p>
