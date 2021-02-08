@@ -5,6 +5,7 @@ Software is just for educational purposes and can not be used for any commmercia
 
 Based on Paillier Cryptosystem, this software is for demonstrating how homomorphic encryption works. IDE contains informations about all variables which are used in encryption/decryption/addition/multiplication. 
 
+## Running Paillier-Cryptosystem-Dordy
 Please note: Paillier-Cryptosystem-Dordy is using Wolfram's associated memory between notebooks and to ensure proper functionality, it is necessary to run and evaluate both notebooks. 
 Recommended approach: 
 windows: run Paillier.bat, evaluate notebooks 
