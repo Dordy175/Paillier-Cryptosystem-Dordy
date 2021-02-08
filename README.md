@@ -24,13 +24,13 @@ Software is divided to 5 sections - encryption, decryption, addition, multiplica
 
 ## Encryption && Decryption
 For encryption just write some number to input and click encrypt, for decryption just click decrpyt to decrypt previusoly encrypted number.
-<p align="left">
+<p align="center">
  <img src="https://user-images.githubusercontent.com/68067175/107209713-78427700-6a03-11eb-93ca-e39847ee3352.png">
 </p>
 
 ## Addition && Multiplication
 For addition and multiplication just choose specific operation and fill inputs - in info section should be full variables records
-<p align="left">
+<p align="center">
  <img src="https://user-images.githubusercontent.com/68067175/107209846-a6c05200-6a03-11eb-90dd-6e66011929d4.png">
 </p>
 
