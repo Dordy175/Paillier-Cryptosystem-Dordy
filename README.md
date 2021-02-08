@@ -16,6 +16,8 @@ Recommended approach:
 2. Evaluate paillierResources, evaluate paillierGUI (Wolfram -> Evaluation -> Evaluate notebook)
 
 ## Preview
+Software is divided to 5 sections - encryption, decryption, addition, multiplication and info (info is used to echo about each operation associated with one of previous sections, main purpose of info is to show values in variables)
+
 <p align="left">
  <img src="https://user-images.githubusercontent.com/68067175/107207519-ae322c00-6a00-11eb-870a-be10fa5dad88.png">
 </p>
